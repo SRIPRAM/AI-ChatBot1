@@ -22,6 +22,7 @@ def chat_with_groq(messages,model="meta-llama/llama-4-scout-17b-16e-instruct",te
         return reply
     else:
         return f"Error{response.status_code}:{response.text}"
+st.set_page_config(page_title="AI ChatBot",layout="centered",initial_sidebar_state="collapsed")
 st.title("AI Chatbot Powered by Groq LLM")
 st.caption("Built with LLaMA 4 Scout via Groq API")
 if "messages" not in st.session_state:
