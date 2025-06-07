@@ -26,7 +26,7 @@ st.markdown("""<head>
 <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
 
 <!-- Meta Tags Generated with https://metatags.io -->
-</head>"""
+</head>""")
 def chat_with_groq(messages,model="meta-llama/llama-4-scout-17b-16e-instruct",temperature=0.7):
     headers={
         'Authorization':f'Bearer {GROQ_API_KEY}',
