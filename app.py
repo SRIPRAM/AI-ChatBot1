@@ -5,28 +5,6 @@ from dotenv import load_dotenv
 load_dotenv()
 GROQ_API_KEY=os.getenv("GROQ_API_KEY")
 API_URL="https://api.groq.com/openai/v1/chat/completions"
-st.markdown("""<head>
-<!-- Primary Meta Tags -->
-<title>AI ChatBot</title>
-<meta name="title" content="AI ChatBot" />
-<meta name="description" content="LLaMa 4 Scout" />
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://ai-chatbot3-srinjoy.streamlit.app/" />
-<meta property="og:title" content="AI ChatBot" />
-<meta property="og:description" content="LLaMa 4 Scout" />
-<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://ai-chatbot3-srinjoy.streamlit.app/" />
-<meta property="twitter:title" content="AI ChatBot" />
-<meta property="twitter:description" content="LLaMa 4 Scout" />
-<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
-
-<!-- Meta Tags Generated with https://metatags.io -->
-</head>""")
 def chat_with_groq(messages,model="meta-llama/llama-4-scout-17b-16e-instruct",temperature=0.7):
     headers={
         'Authorization':f'Bearer {GROQ_API_KEY}',
